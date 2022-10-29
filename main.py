@@ -6,7 +6,7 @@ def pali():
         for word in words:
             if text.count(word)>0:
                 orig = word
-                new = word.title()
+                new = word[0].upper()+word[1:]
 
                 text = text.replace(orig, new)
         print(text)
